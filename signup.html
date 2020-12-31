@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My blog || Sign up</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,300&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="style.css/signup.css">
+</head>
+<body>
+    <header>
+        <h1 class="myblog">MY BLOG<span class="dot">.</span> </h1>
+        <nav> 
+            
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+               
+                <li class="home"><a class="nav-a"  href="/Home.html">HOME</a></li>
+                <li class="signup"><a class="nav-a"  style="color: red;" href="/signup.html">SIGN UP</a></li>
+                <li class="LOGIN"><a class="nav-a"href="/login.html">LOGIN</a></li>
+            </ul>
+            
+            <span class="open" style="cursor:pointer" onclick="openNav()">&#9776;</span>
+        </nav>
+        
+    </header>
+    <main>
+        <h2>SIGN UP</h2>
+        <form class="signupform" action="">
+          <div class="formp">
+            <input type="text" id="name" required placeholder="YOUR NAME" >
+            <input type="email" name="email" id="email" required placeholder="YOUR MAIL" >
+          </div> 
+          <input type="password" name="password" id="password" placeholder="PASSWORD" >
+          <input type="password" name="connfirm_password" id="confirm_password"  onkeyup='check();'   placeholder="CONFIRM PASSWORD">
+          <p id="message">message</p>
+
+          <input type="submit" name="signup" id="signup" value="SIGN UP">
+            
+
+        </form>
+    </main>
+
+
+    <footer>
+        <div class="socials">
+            <a class="social" href="">twitter</a>
+            <span class="slash">|</span>
+            <a class="social" href="">Github</a>
+        </div>
+
+        <p class="credit">
+            @IAMMASTERCRAFT
+        </p>
+    </footer>
+
+
+
+
+
+
+ <script src="/signup.js"></script>
+</body>
+</html>
