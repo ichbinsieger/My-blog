@@ -1,292 +1,261 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
-    
     height: 120vh;
     background-color: beige;
     font-family: 'Open Sans', sans-serif;
 }
-header{
+
+header {
     width: 100%;
     background-color: rgb(201, 230, 230);
     position: fixed;
     height: 10%;
-   
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 100px;
     box-shadow: 1px 2px 1px rgb(224, 216, 216);
 }
-.open,.closebtn{
+
+.open,
+.closebtn {
     display: none;
 }
-.dot{
+
+.dot {
     color: rgb(157, 211, 9);
     font-size: 70px;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-nav{
+nav {
     display: flex;
     margin-right: 100px;
     margin-top: 20px;
-  
-    
-    
 }
-ul{
+
+ul {
     display: flex;
-    
-    
 }
-.nav-a{
+
+.nav-a {
     text-decoration: none;
 }
 
-.nav-a:hover{
+.nav-a:hover {
     color: tomato;
 }
 
-
-li{
+li {
     padding-left: 50px;
     list-style: none;
 }
 
-
-.blog{
+.blog {
     display: flex;
     justify-content: space-around;
     padding-left: 80px;
     padding-right: 100px;
-    margin-bottom: 50px;
-    
-
-   
+    /* margin-bottom: 50px; */
+    /* replacing margin-bottom with padding-top - MasterCraft */
+    padding-top: 100px;
 }
-.blogpost1{
-    
+
+.blogpost1 {
     border: 0.001px solid rgb(204, 201, 195);
-   padding-bottom: 5%;
+    padding-bottom: 5%;
     margin-left: 10px;
     width: 100%;
     max-width: 100%;
 }
-img{
-   width: 100%;
-   max-width: 100%;
-   min-width:50px;
+
+img {
+    width: 100%;
+    max-width: 100%;
+    min-width: 50px;
 }
-.postTitle{
+
+.postTitle {
     margin: 8% 5% 3% 5%;
 }
-.postWriter{
+
+.postWriter {
     margin: 0 7% 0 5%;
-    
     color: rgba(26, 9, 9, 0.72);
     border-bottom: 0.001px solid rgb(204, 201, 195);
     padding-bottom: 40px;
 }
-.postcaption{
+
+.postcaption {
     margin: 5% 7% 0 5%;
-   padding-left:40px ;
-   
+    padding-left: 40px;
     padding-top: 20px;
     border-bottom: 0.001px solid rgb(204, 201, 195);
     padding-bottom: 40px;
-    
 }
 
-
-
-footer{
+footer {
     margin-top: 200px;
     height: 200px;
     background-color: rgb(37, 29, 29);
     text-align: center;
     width: 100%;
-  
-    
 }
-.socials{
-   padding-top: 50px;
-   padding-bottom: 30px;
 
-
+.socials {
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
-.slash{
+
+.slash {
     padding-right: 20px;
     padding-left: 20px;
 }
-.credit{
+
+.credit {
     padding: 20px;
     border-top: 0.0001px solid rgb(133, 119, 119);
     margin: 0 10% 0 10%;
     color: yellowgreen;
 }
-.socials,.social {
+
+.socials,
+.social {
     color: rgb(255, 255, 255);
 }
-.credit{
+
+.credit {
     font-size: 12px;
 }
 
-
-
-
-
-
-
-
-
-@media (max-width:500px){
-    .blog{
+@media (max-width:500px) {
+    .blog {
         flex-direction: column;
         width: 100%;
         padding-left: 10px;
         padding-right: 20px;
-        
     }
-    header{
+    header {
         padding: 0px;
-    
-        
     }
-    nav{
+    nav {
         flex-direction: column;
-     
-        
     }
-    ul{
+    ul {
         display: none;
         position: absolute;
         left: 30%;
         top: 33%;
     }
-    .open{
+    .open {
         display: block;
         position: absolute;
         right: 10%;
-        
         top: 30%;
         font-size: 20px;
         color: rgb(52, 21, 94);
-        transition: 0.8s;   
+        transition: 0.8s;
     }
-    .closebtn{
+    .closebtn {
         position: absolute;
         top: 12%;
         font-size: 24px;
         right: 10%;
     }
-    
-    .postHead{
+    .postHead {
         width: 100%;
     }
-    .blogpost1{
-    
+    .blogpost1 {
         width: 100%;
-        
         margin-bottom: 5%;
     }
-    h1{
+    h1 {
         font-size: 24px;
         line-height: 3px;
         padding-left: 20px;
     }
-    
-    li{
+    li {
         line-height: 40px;
     }
 }
 
 @media only screen and (max-device-width:768px) {
-    .blog{
+    .blog {
         flex-direction: column;
         width: 100%;
         padding-left: 10px;
         padding-right: 20px;
-        
     }
-    header{
+    header {
         padding: 0px;
-    
-        
     }
-    nav{
+    nav {
         flex-direction: column;
-     
-        
     }
-    ul{
+    ul {
         display: none;
         position: absolute;
         left: 30%;
         top: 33%;
     }
-    .open{
+    .open {
         display: block;
         position: absolute;
         right: 10%;
         font-size: 24px;
-        
         top: 40%;
         font-size: 24px;
         color: rgb(53, 10, 112);
-        transition: 0.8s;   
+        transition: 0.8s;
     }
-    .closebtn{
+    .closebtn {
         position: absolute;
         top: 12%;
         font-size: 24px;
         right: 10%;
     }
-    
-    .postHead{
+    .postHead {
         width: 100%;
     }
-    .postWriter{
+    .postWriter {
         font-size: 12px;
     }
-    .postcaption{
+    .postcaption {
         font-size: 10px;
         letter-spacing: 0.1px;
     }
-    .blogpost1{
-    
+    .blogpost1 {
         width: 100%;
-        
         margin-bottom: 5%;
     }
-    h1{
+    h1 {
         font-size: 24px;
         line-height: 3px;
         padding-left: 20px;
         margin-top: 20px;
     }
-    
-    li{
+    li {
         line-height: 40px;
     }
-    footer{
+    footer {
         height: 25%;
         margin-bottom: 0px;
         font-size: 12px;
-
     }
-    .credit{
+    .credit {
         font-size: 10px;
     }
-    .socials,.social {
+    .socials,
+    .social {
         color: rgb(255, 255, 255);
     }
-
 }
