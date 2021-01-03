@@ -70,6 +70,15 @@ li {
     padding-top: 100px;
 }
 
+.blog-main {
+    width: 100% !important;
+}
+
+.post-link {
+    padding: 15px;
+    margin: 10px;
+}
+
 .blogpost1 {
     border: 0.001px solid rgb(204, 201, 195);
     padding-bottom: 5%;
